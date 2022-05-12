@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+list-style-type: none;
+margin:0
+padding: 0;
+background-color: #333;
+position:fixed;
+top:0;
+width: 100%;
+}
+
+li {
+float: left;
+border-right:1px solid pink;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+.dp {
+margin-top: 150px;
+}
+body {
+background-image: url("etec.png");
+background-repeat: no-repeat;
+background-position: right top;
+margin-right: 250px;
+margin-top: 200px;
+background-color: #F8F8FF;
+}
+
+h2 {
+text-align: center;
+color: red;
+}
+
+fieldset {
+color: SteelBlue;
+}
+
+input[type=text] {
+width: 100%;
+margin: 8px 0;
+box-sizing: border-box;
+border: 2px solid #E0FFFF;
+border-radis: 4px;
+font-family: arial;
+background-color: #FFE4E1;
+background-image: url('ft.ico');
+background-repeat: no-repeat;
+background-postion: 10px 10px;
+padding: 12px 20px 12px 40px;
+background-size: 40px;
+}
+
+input[type=text]:focus {
+background-color: #FFFFE0;
+}
+
+
+
+</style>
+</head>
+<body>
+<ul>
+<li><a href="inicio.html">Início</a></li>
+<li><a href="exercicio forms.html">Cadastro</a></li>
+<li><a href="dados do criador.html">Informações do cirador do site </a></li>
+</ul>
+
+<h2 class="dp"> DADOS PESSOAIS</h2>
+<form autocomplete="off" >
+<fieldset>
+<legend> Dados do aluno e do responsável </legend>
+<label for=nome1> Nome: </label><br>
+<input type="text" id=nome1 name="NOME" value="Digite seu nome" readonly autofocus>
+<br>
+<label for=sobre> Sobrenome: </label><br>
+<input type="text" id=sobre name=sobrenome value="Digite seu sobrenome" disabled>
+<br>
+<br>
+<label for=dt_nascimento> Data de Nascimento: </label><br>
+<input type="date" id=dt_nascimento name="nascimento" max="2009-12-31">
+<br>
+<br>
+<label for=email> e-mail: </label><br>
+<input type="email" id=email name="email" value="" size="5">
+<br>
+<br>
+<label for=nome1> Nome Completo do Pai: </label><br>
+<input type="text" id=nome1 name="nome do pai" value="" maxlength="10">
+<br>
+<br>
+<label for=sobre> Nome completo da Mãe: </label><br>
+<input type="text" id=sobre name="nome da mãe" value="" autofocus placeholder="Nome">
+<br>
+<br>
+<label for=telefone> Telefone do Responsável: </label><br>
+<input type="text" id=telefone name="telefone do resp"  required>
+<br><br>
+
+</fieldset>
+
+<h2> ENDEREÇO </h2>
+
+<fieldset>
+<legend> Endereço da moradia </legend>
+<label for=rua> Rua: </label><br>
+<input type="text" id=rua name="rua"><br><br>
+<label for=bairro> Bairro: </label><br>
+<input type="text" id=bairro name="bairro"><br><br>
+<label for=est_cid> Cidade e Estado: </label><br>
+<input type="text" id=est_cid name="cid e estado"><br><br>
+<label for=cep> CEP: </label><br>
+<input type="text" id=cep name="cep"><br><br>
+
+</fieldset>
+
+<h2> DADOS ESCOLARES </h2>
+
+<fieldset>
+<legend> Daods da Escola </legend>
+<label for=escola> Escola matriculado: </label><br>
+<input type="text" id=escola name="escola">
+<br><br>
+<label for=serie> Série: </label><br>
+<input type="text" id=serie name="serie"><br><br>
+<label for=ra> Número do RA: </label><br>
+<input type="text" id=ra name="ra"><br><br>
+
+</fieldset>
+
+<h2> ÁREA DE INTERESSE </h2>
+
+<fieldset>
+<legend> Área de preferência </legend>
+<p> Marque a área que tem interesse: </p>
+<br>
+<input type="radio" id="CH" name="area_p" value="CH">
+<label for="CH"> Ciências Humanas</label><br>
+<input type="radio" id="CN" name="area_p" value="CN">
+<label for="CN"> Ciências da Natureza</label><br>
+<input type="radio" id="exatas" name="area_p" value="exatas">
+<label for="exatas"> Exatas</label><br>
+<input type="radio" id="lin" name="area_p" value="lin">
+<label for="lin"> Linguagens</label><br>
+<input type="radio" id="inf" name="area_p" value="inf">
+<label for="inf"> Informática</label><br>
+<br>
+<p> Marque uma seguna opção, caso não consiga a vaga na primeira opção: </p>
+<br>
+<input type="radio" id="CH" name="area_s" value="CH">
+<label for="CH"> Ciências Humanas</label><br>
+<input type="radio" id="CN" name="area_s" value="CN">
+<label for="CN"> Ciências da Natureza</label><br>
+<input type="radio" id="exatas" name="area_s" value="exatas">
+<label for="exatas"> Exatas</label><br>
+<input type="radio" id="lin" name="area_s" value="lin">
+<label for="lin"> Linguagens</label><br>
+<input type="radio" id="inf" name="area_s" value="inf">
+<label for="inf"> Informática</label><br>
+</fieldset>
+<br><input type="submit">
+<input type="reset" value="Apagar">
+</form>
+
+
+</body>
+</html>
